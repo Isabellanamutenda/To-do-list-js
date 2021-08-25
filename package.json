@@ -1,7 +1,6 @@
-
 {
-  "optionalDependencies":{
-    "fsevents":"~2.3.2"
+  "optionalDependencies": {
+    "fsevents": "~2.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -9,6 +8,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.1",
+    "express": "^4.17.1",
     "hint": "^6.1.4",
     "html-webpack-plugin": "^5.3.2",
     "style-loader": "^3.2.1",
@@ -17,6 +17,7 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.20.1",
     "webpack-cli": "^4.8.0",
+    "webpack-dev-middleware": "^5.0.0",
     "webpack-dev-server": "^4.0.0"
   },
   "name": "to-do-list",
@@ -211,6 +212,7 @@
     "fs-extra": "^10.0.0",
     "fs-minipass": "^2.1.0",
     "fs.realpath": "^1.0.0",
+    "fsevents": "~2.3.2",
     "function-bind": "^1.1.1",
     "functional-red-black-tree": "^1.0.1",
     "gauge": "^2.7.4",
@@ -613,6 +615,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
+    "watch": "webpack --watch",
+    "server": "node server.js",
     "build": "webpack"
   },
   "repository": {

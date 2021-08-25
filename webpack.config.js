@@ -8,10 +8,11 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      title: 'Development'
     }),
   ],
 
@@ -19,6 +20,7 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/',
   },
   module: {
     rules: [
