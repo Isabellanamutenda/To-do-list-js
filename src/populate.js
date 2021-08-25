@@ -1,6 +1,6 @@
 /* eslint no-loop-func: 0, import/prefer-default-export: 0 */
-import { setStorage } from './storage';
-import checkbox from './check';
+import { setStorage } from './storage.js';
+import checkbox from './check.js';
 import { removeIndex } from './index'; // eslint-disable-line
 
 const parent = document.getElementById('list');

@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',  
+  mode: 'development',
   entry: './src/index.js',
 
   devServer: {
@@ -10,12 +10,10 @@ module.exports = {
   },
 
   plugins: [
-   new HtmlWebpackPlugin({
-    template: './src/index.html'
-   }),
-],
-
-  
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
 
   output: {
     filename: 'main.js',
@@ -25,9 +23,9 @@ module.exports = {
   module: {
     rules: [
       {
-       test: /\.css$/i,
-       use: ['style-loader', 'css-loader'],
-       },
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
 };

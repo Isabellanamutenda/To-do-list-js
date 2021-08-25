@@ -1,13 +1,13 @@
 import _, { remove } from 'lodash'; // eslint-disable-line
 import './style.css';
-import sort from './sort';
-import add from './add';
-import rem from './remove';
-import checkbox from './check';
-import defaults from './content';
-import removeSplice from './remove-1';
-import { setStorage, getStorage } from './storage';
-import { content } from './populate'; // eslint-disable-line
+import sort from './sort.js';
+import add from './add.js';
+import rem from './remove.js';
+import checkbox from './check.js';
+import defaults from './content.js';
+import removeSplice from './remove-1.js';
+import { setStorage, getStorage } from './storage.js';
+import { content } from './populate.js'; // eslint-disable-line
 
 const clear = document.getElementById('completed');
 const form = document.getElementById('add');
