@@ -1,4 +1,8 @@
+
 {
+  "optionalDependencies":{
+    "fsevents":"~2.3.2"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.2.0",
@@ -207,7 +211,6 @@
     "fs-extra": "^10.0.0",
     "fs-minipass": "^2.1.0",
     "fs.realpath": "^1.0.0",
-    "fsevents": "^2.3.2",
     "function-bind": "^1.1.1",
     "functional-red-black-tree": "^1.0.1",
     "gauge": "^2.7.4",
