@@ -16,7 +16,11 @@ In this project I created a simple to-do-list using JavaScript, and webpack.
 
 
 ## Installation
-You can get this project to run on your local machine. Clone it by running git clone https://github.com/Isabellanamutenda/To-do-list-js.git and go to the directory by using cd To-do-list-js and run npm i and then npm start
+You can get this project to run on your local machine. 
+Clone it by running git clone https://github.com/Isabellanamutenda/To-do-list-js.git 
+Go go to the directory by using cd To-do-list-js 
+run npm i
+run npm start
 
 ## Author
 
