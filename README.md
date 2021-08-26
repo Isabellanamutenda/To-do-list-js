@@ -14,7 +14,7 @@ In this project I created a simple to-do-list using JavaScript, and webpack.
 ## Live Demo
 [Live Demo Link](https://isabellanamutenda.github.io/To-do-list-js/)
 
-
+https://isabellanamutenda.github.io/To-do-list-js/
 ## Installation
 You can get this project to run on your local machine. 
 Clone it by running git clone https://github.com/Isabellanamutenda/To-do-list-js.git 
