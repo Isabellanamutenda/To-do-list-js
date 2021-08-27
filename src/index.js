@@ -1,11 +1,8 @@
 import _, { remove } from 'lodash'; // eslint-disable-line
 import './style.css';
 import sort from './sort.js';
-import add from './add.js';
-import rem from './remove.js';
 import checkbox from './check.js';
 import defaults from './content.js';
-import removeSplice from './remove-1.js';
 import { setStorage, getStorage } from './storage.js';
 import { content } from './populate.js'; // eslint-disable-line
 

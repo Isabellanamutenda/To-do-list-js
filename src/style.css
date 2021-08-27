@@ -10,15 +10,15 @@ li {
   line-height: 50px;
 }
 
-#list-container {
+#list-cont {
   display: flex;
   flex-flow: column;
   text-align: left;
   margin: auto;
-  margin-top: 200px;
-  width: 450px;
+  margin-top: 100px;
+  width: 350px;
   padding: 20px;
-  box-shadow: 1px 1px 10px;
+  box-shadow: 1px 1px 3px;
 }
 
 #list {
@@ -42,7 +42,7 @@ li {
 .input-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 35px 0 0;
+  padding: 0 25px 0 0;
 }
 
 .fa-check {
@@ -54,7 +54,7 @@ li {
 
 .fas {
   color: rgba(20, 20, 20, 0.6);
-  text-decoration: none !important;
+  text-decoration: none;
   text-align: center;
 }
 
@@ -63,27 +63,26 @@ li {
   align-self: center;
   margin-right: 20px;
   cursor: pointer;
-  width: 30px;
+  width: 40px;
   height: 100%;
   line-height: 50px;
-  font-size: 1.5em;
+  font-size: 20px;
 }
 
 input[type='checkbox'] {
-  margin-right: 10px;
+  margin-right: 15px;
   outline: none;
   align-self: center;
 }
 
 .dragging {
-  background: rgba(227, 96, 86, 0.8);
+  background: rgba(192, 183, 182, 0.8);
   width: 450px;
 }
 
 .change {
   outline: none;
   border: none;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
-  background: yellow;
+  background: blue;
 }
