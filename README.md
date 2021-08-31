@@ -11,8 +11,8 @@ In this project I created a simple to-do-list using JavaScript, and webpack.
 - Removing a task
 - Storing data in the local storage
 
-<!-- ## Live Demo
-[Live Demo Link](https://isabellanamutenda.github.io/To-do-list-js/) -->
+## Live Demo
+[Live Demo Link](https://isabellanamutenda.github.io/To-do-list-js/)
 
 
 ## Installation
