@@ -1,10 +1,12 @@
 # To-do-list-js
-In this project I created a simple to-do-list using JavaScript, and webpack.
+In this project I created a simple to-do-list using JavaScript, and webpack and I have tested it.
 
 # Built with
 - Webpack
 - JavaScript
 - CSS
+- Jest
+- Babel
 
 # Features
 - Adding a new task
@@ -28,6 +30,11 @@ run npm start
 
 - GitHub: [https://github.com/Isabellanamutenda)
 
+👤 **Emmanuelle Kamwa**
+
+-   Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+-   Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+-   Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4/)
 
 
 ## 🤝 Contributing
