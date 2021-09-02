@@ -60,6 +60,4 @@ describe('Edit/Checkbox/Swap/Clear', () => {
     editItem(arr, 0);
     expect(arr[0].description).toBe('This is an edit of task at index 0');
   });
-
-  
 });
