@@ -1,9 +1,9 @@
-import { setStorage } from './storage';
+import { setStorage } from './storage.js';
 
 export default (arr) => {
   const toremove = [];
   for (let i = 0; i < arr.length; i += 1) {
-    if (arr[i].completed == 'true') { toremove.push(i); }
+    if (arr[i].completed === 'true') { toremove.push(i); }
     // if (document.getElementById(i).checked) { toremove.push(i); }
   }
   let counter = 0;

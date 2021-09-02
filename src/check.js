@@ -1,4 +1,4 @@
-import { setStorage } from './storage';
+import { setStorage } from './storage.js';
 
 export default (arr) => {
   for (let k = 0; k < arr.length; k += 1) {
