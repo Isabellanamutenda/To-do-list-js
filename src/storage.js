@@ -12,5 +12,6 @@ const getStorage = () => {
   }
   return newArray;
 };
+
 export { setStorage };
 export { getStorage };
