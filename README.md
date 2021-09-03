@@ -28,7 +28,9 @@ run npm start
 
 - GitHub: [https://github.com/Isabellanamutenda)
 
+👤 **Akintoye Damilare**
 
+- GitHub: [https://github.com/dami1080)
 
 ## 🤝 Contributing
 
