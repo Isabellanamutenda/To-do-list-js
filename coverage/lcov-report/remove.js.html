@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -79,40 +79,40 @@
 <a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { setStorage } from './storage';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { setStorage } from './storage.js';
 &nbsp;
-export default <span class="fstat-no" title="function not covered" >(a</span>rr) =&gt; {
-  const toremove = <span class="cstat-no" title="statement not covered" >[];</span>
-<span class="cstat-no" title="statement not covered" >  for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; arr.length; i += 1) {</span>
-<span class="cstat-no" title="statement not covered" >    if (arr[i].completed == 'true') { <span class="cstat-no" title="statement not covered" >toremove.push(i); </span>}</span>
+export default (arr) =&gt; {
+  const toremove = [];
+  for (let i = 0; i &lt; arr.length; i += 1) {
+    if (arr[i].completed === 'true') { toremove.push(i); }
     // if (document.getElementById(i).checked) { toremove.push(i); }
   }
-  let counter = <span class="cstat-no" title="statement not covered" >0;</span>
-<span class="cstat-no" title="statement not covered" >  toremove.forEach(<span class="fstat-no" title="function not covered" >(e</span>lement) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    arr.splice(element - counter, 1);</span>
-<span class="cstat-no" title="statement not covered" >    counter += 1;</span>
+  let counter = 0;
+  toremove.forEach((element) =&gt; {
+    arr.splice(element - counter, 1);
+    counter += 1;
   });
-<span class="cstat-no" title="statement not covered" >  for (let j = <span class="cstat-no" title="statement not covered" >0;</span> j &lt; arr.length; j += 1) {</span>
-<span class="cstat-no" title="statement not covered" >    arr[j].index = j;</span>
+  for (let j = 0; j &lt; arr.length; j += 1) {
+    arr[j].index = j;
   }
-<span class="cstat-no" title="statement not covered" >  setStorage(arr);</span>
-<span class="cstat-no" title="statement not covered" >  return arr;</span>
+  setStorage(arr);
+  return arr;
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -121,7 +121,7 @@ export default <span class="fstat-no" title="function not covered" >(a</span>rr)
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Sep 02 2021 12:50:00 GMT+0300 (East Africa Time)
+                at Fri Sep 03 2021 11:08:03 GMT+0300 (East Africa Time)
             </div>
         </div>
         <script src="prettify.js"></script>

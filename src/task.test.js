@@ -2,10 +2,13 @@
  * @jest-environment jsdom
  */
 /* eslint no-unused-vars: 0 */
-
 import add from './add.js';
 import removeSplice from './remove-1.js';
 import editItem from './edit.js';
+import checkbox from './check.js';
+import swap from './swap.js';
+import { setStorage } from './storage.js';
+import clear from './remove.js';
 
 describe('Add/Remove', () => {
   test('Add one new item to the list', () => {
@@ -61,5 +64,63 @@ describe('Edit/Checkbox/Swap/Clear', () => {
     expect(arr[0].description).toBe('This is an edit of task at index 0');
   });
 
-  
+  test('Update completed status based on checkbox', () => {
+    document.body.innerHTML = '<li id="item0"><input type="checkbox" checked id="0"><li id="item1"><input type="checkbox" id="1">';
+    const arr = [
+      {
+        description: 'Task 1',
+        completed: false,
+        index: 0,
+      },
+      {
+        description: 'Task 2',
+        completed: false,
+        index: 1,
+      },
+    ];
+
+    checkbox(arr);
+    expect(arr[0].completed).toBe('true');
+  });
+
+  test('Swap values upon drag and drop', () => {
+    const arr = [
+      {
+        description: 'Task 1',
+        completed: false,
+        index: 0,
+      },
+      {
+        description: 'Task 2',
+        completed: false,
+        index: 1,
+      },
+    ];
+
+    swap(arr, 0, 1);
+    expect(arr[0].description).toBe('Task 2');
+    expect(arr[1].description).toBe('Task 1');
+  });
+
+  test('Clear all completed', () => {
+    const arr = [
+      {
+        description: 'Task 1',
+        completed: 'true',
+        index: 0,
+      },
+      {
+        description: 'Task 2',
+        completed: 'false',
+        index: 1,
+      },
+      {
+        description: 'Task 3',
+        completed: 'true',
+        index: 2,
+      },
+    ];
+    clear(arr);
+    expect(arr).toHaveLength(1);
+  });
 });
